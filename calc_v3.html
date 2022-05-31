@@ -1,0 +1,222 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+button{
+    border-radius:20px 0 20px 0;
+    padding:25px 25px 25px 25px;
+    background-image:linear-gradient(to bottom right,red,blue);
+    color:white;
+    font-size:20px;
+}
+body{
+    text-align:center;
+    background-image:linear-gradient(to right,silver,grey);
+}
+#inp{
+    padding:30px;
+    border-radius:0 30px 0 30px;
+    font-size:140%;
+    font-family:Georgia;
+    outline:5px;
+    border:5px solid black;
+    background-color:white;
+}
+#clikreset{
+    padding:25px 10px 27px 10px;
+}
+</style>
+</head>
+<body>
+<h1>CALCULATOR</h1>
+<form>
+<input type="text" id="inp">
+<br/><br/>
+<button type="button"id="clik1">1</button>
+<button type="button" id= "clik2">2</button>
+<button type="button" id= "clik3">3</button>
+<button type="button"  id= "clik4">4</button><br/><br/>
+<button type="button"  id= "clik5">5</button>
+<button type="button"  id= "clik6">6</button>
+<button type="button"  id= "clik7">7</button>
+<button type="button"  id= "clik8">8</button><br/><br/>
+<button type="button"  id= "clik9">9</button>
+<button type="button"  id= "clik0">0</button>
+<button type="button"  id= "clikdot">.</button>
+<button type="button"  id="clikequal"> =  </button><br/><br/>
+<button type="reset"id="clikreset" onclick="clkreset">reset</button>
+<button type="button"id="clikpls"onclick="pls();">+    </button>
+<button type="button"  id="clikminus"onclick="minus()">-    </button>
+<button type="button"  id="clikinto"onclick="into()">*    </button><br/><br/>
+<button type="button"  id= "clikdiv"onclick="clkdiv()">/</button>
+<button type="button"id="clikmod"onclick="mod()">%</button>
+</form>
+<script>
+var arr=new Array;
+arr[1]=document.getElementById("inp");
+arr[2]=document.getElementById("clik1");
+arr[3]=document.getElementById("clik2");
+arr[4]=document.getElementById("clik3");
+arr[5]=document.getElementById("clik4");
+arr[6]=document.getElementById("clik5");
+arr[7]=document.getElementById("clik6");
+arr[8]=document.getElementById("clik7");
+arr[9]=document.getElementById("clik8");
+arr[10]=document.getElementById("clik9");
+arr[11]=document.getElementById("clik0");
+arr[12]=document.getElementById("clikdot");
+arr[13]=document.getElementById("clikequal");
+arr[14]=document.getElementById("clikreset");
+arr[15]=document.getElementById("clikpls");
+arr[16]=document.getElementById("clikminus");
+arr[17]=document.getElementById("clikinto");
+arr[18]=document.getElementById("clikdiv");
+arr[19]=document.getElementById("clikmod");
+arr[2].onclick=function(){clik1()};
+arr[3].onclick=function(){clik2()};
+arr[4].onclick=function(){clik3()};
+arr[5].onclick=function(){clik4()};
+arr[6].onclick=function(){clik5()};
+arr[7].onclick=function(){clik6()};
+arr[8].onclick=function(){clik7()};
+arr[9].onclick=function(){clik8()};
+arr[10].onclick=function(){clik9()};
+arr[11].onclick=function(){clik0()};
+arr[12].onclick=function(){clikdot()};
+arr[13].onclick=function(){clikequal()};
+arr[14].onclick=function(){clkreset()};
+
+function clik1(){
+     arr[1].value+=1;
+     setTimeout(function(){
+arr[2].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[2].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clik2(){
+    arr[1].value+=2;
+    setTimeout(function(){
+arr[3].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[3].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clik3(){
+    arr[1].value+=3;
+    setTimeout(function(){
+arr[4].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[4].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clik4(){
+    arr[1].value+='4';
+    setTimeout(function(){
+arr[5].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[5].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clik5(){
+    arr[1].value+=5;
+    setTimeout(function(){
+arr[6].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[6].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clik6(){
+    arr[1].value+=6;
+    setTimeout(function(){
+arr[7].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[7].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clik7(){
+    arr[1].value+=7;
+    setTimeout(function(){
+arr[8].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[8].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clik8(){
+    arr[1].value+=8;
+    setTimeout(function(){
+arr[9].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[9].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clik9(){
+    arr[1].value+=9;
+    setTimeout(function(){
+arr[10].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[10].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clik0(){
+    arr[1].value+=0;
+    setTimeout(function(){
+arr[11].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[11].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function pls(){
+  arr[1].value+='+';
+  setTimeout(function(){
+arr[15].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[15].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function minus(){
+  arr[1].value+='-';
+  setTimeout(function(){
+arr[16].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[16].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function into(){
+    arr[1].value+='*';
+    setTimeout(function(){
+arr[17].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[17].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clkdiv(){
+   arr[1].value+='/';
+   setTimeout(function(){
+arr[18].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[18].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function mod(){
+   arr[1].value+='%';
+   setTimeout(function(){
+arr[19].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[19].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clikdot(){
+    arr[1].value+='.';
+    setTimeout(function(){
+arr[12].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[12].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clikequal(){
+    arr[1].value=eval(arr[1].value);
+    setTimeout(function(){
+arr[13].style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+arr[13].style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+function clkreset()
+{
+    setTimeout(function(){
+document.getElementById("clikreset").style.backgroundImage="linear-gradient(black,black)"},20);
+    setTimeout(function(){
+document.getElementById("clikreset").style.backgroundImage="linear-gradient(to bottom right,red,blue)";},250);
+}
+
+
+
+
+</script>
+
+</body>
+</html>
